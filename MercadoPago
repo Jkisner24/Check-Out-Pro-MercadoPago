@@ -1,0 +1,29 @@
+Mastercard
+5031 7557 3453 0604 123 11/25
+Visa
+4509 9535 6623 3704 123 11/25
+American Express
+3711 803032 57522 1234 11/25
+
+VendedorPrueba	
+TEST_USER_1647739051 nratvkgqZC
+
+CompradorPrueba	
+TEST_USER_1600190745 ug7kjvdOnA
+
+Access Token Produccion 
+APP_USR-6693297450833866-033008-20ca02011555d81054b79b340f47fcd5-1341811513
+
+link ok
+http://localhost:3003/success?
+collection_id=56286125495&
+collection_status=approved&
+payment_id=56286125495&
+status=approved&
+external_reference=null&
+payment_type=account_money&
+merchant_order_id=8444065230&
+preference_id=1341811513-cbbc5f6b-5a12-4307-b405-764968ea1a04&
+site_id=MLA&
+processing_mode=aggregator&
+merchant_account_id=null
