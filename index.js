@@ -21,10 +21,10 @@ app.get('/generar', (req, res) =>{
         title: 'Mi producto',
         quantity: 1,
         currency_id: 'ARS',
-        unit_price: 120 
+        unit_price: 240 
         },
     ],
-    notification_url: 'https://ea1d-2800-560-39-154b-cd68-fa40-af3f-78d5.sa.ngrok.io/notificar'
+    notification_url: 'https://check-out-pro-mercado-pago.vercel.app'
 };
 
 mercadopago.preferences
@@ -63,7 +63,7 @@ app.post('/notificar', async (req,res)=>{
             break;
     }
 
-    console.log(body.payments)
+    //console.log(body.payments)
 
     let paidAmount = 0;
     body.payments.forEach(payment =>{
@@ -86,7 +86,7 @@ app.post('/notificar', async (req,res)=>{
     res.send();
 })
 
-mercadopago.merchant_orders.findById('8446114506').then(res => console.log(res.body))
+//mercadopago.merchant_orders.findById('8446114506').then(res => console.log(res.body))
 
 http.createServer(app).listen(app.get('port'), ()=>{
     console.log('* HTTP escuchando en puerto' + app.get('port'))
